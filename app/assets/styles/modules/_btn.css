@@ -1,0 +1,19 @@
+.btn {
+  padding: 20px;
+  background-color: $mainLightBlue;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+
+  &--large {
+    padding: 20px 30px;
+  }
+
+  &--green {
+    background-color: $mainGreen;
+  }
+
+  &--width {
+    width: 100%;
+  }
+}

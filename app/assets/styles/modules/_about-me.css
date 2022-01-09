@@ -1,0 +1,47 @@
+.about-me {
+  background-color: $mainBlue;
+
+  p {
+    color: white;
+    padding-bottom: 20px;
+  }
+
+  &__header {
+    background-color: $mainLightBlue;
+    border-radius: 10px;
+    color: white;
+
+    h1 {
+      padding: 13px;
+    }
+  }
+
+  &__sub-section {
+    background-color: $mainGreen;
+    padding-bottom: 20px;
+
+    &__header {
+      background-color: $mainLightGreen;
+
+      h1 {
+        padding: 15px;
+        margin: 0;
+        color: white;
+      }
+    }
+
+    p {
+      padding: 0 20px;
+      font-size: 1.2rem;
+      color: white;
+
+      @mixin atMedium {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &--top-margin {
+    margin-top: 40px;
+  }
+}

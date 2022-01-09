@@ -1,0 +1,35 @@
+.skills {
+  background-color: $mainGreen;
+
+  &__jobs {
+    background-color: $mainBlue;
+    color: white;
+
+    &__header {
+      background-color: $mainLightBlue;
+      margin-top: 30px;
+      h1 {
+        padding: 15px;
+      }
+    }
+
+    &__content {
+      &__p {
+        padding: 0 20px 20px 0;
+      }
+    }
+  }
+
+  &__collection {
+    color: white;
+    h1 {
+      margin-top: 40px;
+      @mixin atMedium {
+        margin-top: 20px;
+      }
+    }
+    p {
+      font-size: 1.1rem;
+    }
+  }
+}

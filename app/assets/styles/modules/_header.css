@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  height: 100px;
+  position: relative;
+
+  &--green {
+    background-color: $mainGreen;
+  }
+
+  &--blue {
+    background-color: $mainBlue;
+  }
+
+  &--white {
+    background-color: #d1d1d1;
+  }
+
+  &__icon-container {
+    position: relative;
+    height: auto;
+    width: 25%;
+    margin-right: 20px;
+
+    &--green {
+      background-color: $mainLightGreen;
+    }
+
+    &--blue {
+      background-color: $mainLightBlue;
+    }
+
+    &--white {
+      background-color: #ebebeb;
+    }
+  }
+
+  &__icon {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+  }
+
+  &__text {
+    margin: 0;
+    color: white;
+    font-size: 1.7rem;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @mixin atMedium {
+      font-size: 2.6rem;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @mixin atSmall {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+
+  &--b-padding-small {
+    padding-bottom: 75px;
+  }
+}
