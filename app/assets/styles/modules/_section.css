@@ -10,4 +10,15 @@
   &--b-padding-small {
     padding-bottom: 75px;
   }
+
+  &--b-padding-at-medium {
+    padding-top: 50px;
+    @mixin atMedium {
+      padding-top: 100px;
+    }
+  }
+
+  &--extra-t-p {
+    padding-top: 150px;
+  }
 }

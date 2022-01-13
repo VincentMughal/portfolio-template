@@ -14,21 +14,23 @@
         <h2 class="site-header__logo__header__primary">Vincent Mughal</h2>
         <h2 class="site-header__logo__header__secondary">Web Developer</h2>
       </div>
-      <div class="wrapper--medium">
-        <div class="site-header__menu-content">
-          <nav class="primary-nav">
+      <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
+      </div>
+      <div class="site-header__menu-content">
+        <nav class="primary-nav">
             <ul class="primary-nav__container">
-              <li><a class="primary-nav__li" href="#about-me">About Me</a></li>
-              <li><a class="primary-nav__li" href="#skills">Skills</a></li>
-              <li><a class="primary-nav__li" href="#resume">Resume</a></li>
-              <a class="btn" href="#">Get In Touch</a>
+              <li><a class="primary-nav__li" href="#about-me" id="about-me-link">About Me</a></li>
+              <li><a class="primary-nav__li" href="#skills" id="skills-link">Skills</a></li>
+              <li><a class="primary-nav__li" href="#resume" id="resume-link">Resume</a></li>
+              <a class="btn primary-nav__btn open-modal" href="#">Get In Touch</a>
             </ul>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </div>
     </header>
 
-    <div class="large-hero section">
+    <div class="large-hero section section--b-padding-at-medium section--extra-t-p">
       <div class="wrapper--medium column column--gutters">
         <div class="column__medium-6">
           <div class="large-hero__headers">
@@ -48,7 +50,7 @@
       </div>
     </div>
 
-    <div id="about-me" class="about-me section">
+    <div id="about-me" class="about-me section page-section" data-matching-link="#about-me-link">
       <div class="wrapper column column--gutters">
         <div class="column__medium-9">
           <div class="column column--gutters">
@@ -91,7 +93,7 @@
       </div>
     </div>
 
-    <div id="skills" class="skills section">
+    <div id="skills" class="skills section page-section" data-matching-link="#skills-link">
       <div class="wrapper column column--gutters">
         <div class="column__medium-6">
           <div class="header header--blue ">
@@ -134,7 +136,7 @@
       </div>
     </div>
 
-    <div id="resume" class="resume section section--b-padding-small">
+    <div id="resume" class="resume section section--b-padding-small page-section" data-matching-link="#resume-link">
       <div class="wrapper column column--gutters">
         <div class="column__medium-4">
           <div class="header header--white ">
@@ -159,7 +161,7 @@
               <h1>Skills</h1>
             </div>
             <p class="sub-section__content__p--complete">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a class="sub-section__btn btn btn--large btn--width" href="#">Get In Touch</a>
+            <a class="sub-section__btn btn btn--large btn--width open-modal" href="#">Get In Touch</a>
           </div>
           <div class="sub-section sub-section--blue">
             <div class="sub-section__header sub-section__header--blue">
@@ -193,7 +195,7 @@
       <div class="site-footer__text">
         <p>2022 Vincent Mughal. Copywright &copy; All rights reserved.</p>
       </div>
-      <a class="btn btn--green" href="#">Get In Touch</a>
+      <a class="btn btn--green open-modal" href="#">Get In Touch</a>
     </footer>
     <script src="bundled.js"></script>
   </body>

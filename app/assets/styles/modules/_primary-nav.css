@@ -1,6 +1,67 @@
 .primary-nav {
+  width: 100%;
+  position: relative;
+  background-color: $mainGreen;
+
+  a {
+    &.is-current-link {
+      color: $mainLightGreen;
+    }
+  }
+
+  &__mini-logo {
+    background-color: $mainLightGreen;
+    margin-top: 20px;
+    width: 250px;
+    padding: 20px;
+    height: 100%;
+    display: inline-block;
+    margin-right: 40px;
+
+    &__header {
+      margin: 0;
+      margin-top: 20px;
+
+      &__primary {
+        margin: 0;
+        text-align: left;
+        font-size: 1.5rem;
+      }
+
+      &__secondary {
+        margin: 0;
+        text-align: left;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
   &__container {
+    position: absolute;
     list-style: none;
+    margin: 0;
+    margin-top: 20px;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8%;
+    row-gap: 8%;
+    width: 100%;
+    padding: 20px 40px 40px 20px;
+    background-color: $mainGreen;
+
+    @mixin atMedium {
+      position: relative;
+      display: block;
+      padding: 20px 18px 0 18px;
+      margin-top: 0;
+      background-color: transparent;
+    }
+
+    &__inner {
+      margin: 0;
+      width: auto;
+    }
   }
 
   li {
@@ -9,10 +70,35 @@
 
   &__li {
     color: white;
-    padding-right: 40px;
     text-decoration: none;
     font-size: 1.2rem;
     display: block;
+    margin-bottom: 20px;
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+    height: 100%;
+    background-color: $mainLightGreen;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
 
+
+    @mixin atMedium {
+      font-size: 1.5rem;
+      height: auto;
+      width: auto;
+      padding: 0;
+      padding-right: 40px;
+      background-color: rgba(265, 265, 265, 0);
+      margin-bottom: 30px;
+    }
+  }
+
+  @mixin atMedium {
+    position: relative;
+    background-color: none;
+    display: block;
+    padding-right: 18px;
+    background-color: $mainBlue;
   }
 }
